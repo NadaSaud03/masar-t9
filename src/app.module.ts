@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserModule } from './user/user.module';
+import { GreetingsController } from './greetings/greetings.controller';
 
 const entitiesPath = __dirname + '/**/*.entity{.ts,.js}';
 @Module({
@@ -18,7 +19,7 @@ const entitiesPath = __dirname + '/**/*.entity{.ts,.js}';
     synchronize: false,
     logging: false,
   }), UserModule],
-  controllers: [AppController],
+  controllers: [AppController, GreetingsController],
   providers: [AppService],
 })
 //j
