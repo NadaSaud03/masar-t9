@@ -21,4 +21,5 @@ const entitiesPath = __dirname + '/**/*.entity{.ts,.js}';
   controllers: [AppController],
   providers: [AppService],
 })
+//j
 export class AppModule {}
